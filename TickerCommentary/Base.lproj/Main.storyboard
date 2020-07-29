@@ -10,7 +10,7 @@
         <!--CommentaryVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="CommentaryVC" customClass="ViewController" customModule="TickerCommentary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="CommentaryVC" customClass="CommentaryViewController" customModule="TickerCommentary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,6 +76,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="MatchCommentaryVCView" destination="Gtw-hj-GOu" id="be5-sn-ENI"/>
+                        <outlet property="MatchPhotosVCView" destination="ZBp-tT-TSy" id="y5e-aY-HBs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -84,7 +88,7 @@
         <!--MatchPhotosVC-->
         <scene sceneID="pGP-WQ-vAp">
             <objects>
-                <viewController id="4Z2-3f-o7o" userLabel="MatchPhotosVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MatchPhotosVC" id="4Z2-3f-o7o" userLabel="MatchPhotosVC" customClass="MatchPhotosViewController" customModule="TickerCommentary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="doh-C0-FlO">
                         <rect key="frame" x="0.0" y="0.0" width="374" height="158"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,7 +112,11 @@
                             <constraint firstItem="ZeR-JI-vEJ" firstAttribute="centerY" secondItem="doh-C0-FlO" secondAttribute="centerY" id="dTh-kj-nB6"/>
                             <constraint firstItem="ZeR-JI-vEJ" firstAttribute="centerX" secondItem="doh-C0-FlO" secondAttribute="centerX" id="l4g-cG-YuB"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="HHG-0a-0k7"/>
                     </view>
+                    <connections>
+                        <outlet property="MatchPhotosCollectionView" destination="ZeR-JI-vEJ" id="9I7-P6-cPI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1yK-bq-3iv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,7 +125,7 @@
         <!--MatchCommentaryVC-->
         <scene sceneID="utW-is-X24">
             <objects>
-                <viewController id="PgJ-VQ-8CG" userLabel="MatchCommentaryVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MatchCommentaryVC" id="PgJ-VQ-8CG" userLabel="MatchCommentaryVC" customClass="MatchCommentaryViewController" customModule="TickerCommentary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lVr-Ty-7EJ">
                         <rect key="frame" x="0.0" y="0.0" width="374" height="497"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,7 +142,11 @@
                             <constraint firstItem="iZH-Lo-oWp" firstAttribute="centerX" secondItem="lVr-Ty-7EJ" secondAttribute="centerX" id="geq-u5-lF9"/>
                             <constraint firstItem="iZH-Lo-oWp" firstAttribute="bottom" secondItem="lVr-Ty-7EJ" secondAttribute="bottomMargin" id="zzr-wE-qUM"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="vfo-fW-251"/>
                     </view>
+                    <connections>
+                        <outlet property="MatchCommentaryTableView" destination="iZH-Lo-oWp" id="RNn-aL-vyq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2l3-kR-TsX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
