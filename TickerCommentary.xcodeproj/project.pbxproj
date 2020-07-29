@@ -15,6 +15,8 @@
 		22E95E1B24D17F9600EFA3F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E95E1924D17F9600EFA3F9 /* LaunchScreen.storyboard */; };
 		22E95E2624D17F9600EFA3F9 /* TickerCommentaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E95E2524D17F9600EFA3F9 /* TickerCommentaryTests.swift */; };
 		22E95E3124D17F9600EFA3F9 /* TickerCommentaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E95E3024D17F9600EFA3F9 /* TickerCommentaryUITests.swift */; };
+		22E95E4224D18D2600EFA3F9 /* MatchCommentaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22E95E4124D18D2600EFA3F9 /* MatchCommentaryTableViewCell.xib */; };
+		22E95E4424D18EC100EFA3F9 /* MatchCommentaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E95E4324D18EC100EFA3F9 /* MatchCommentaryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		22E95E2C24D17F9600EFA3F9 /* TickerCommentaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TickerCommentaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E95E3024D17F9600EFA3F9 /* TickerCommentaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerCommentaryUITests.swift; sourceTree = "<group>"; };
 		22E95E3224D17F9600EFA3F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22E95E4124D18D2600EFA3F9 /* MatchCommentaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchCommentaryTableViewCell.xib; sourceTree = "<group>"; };
+		22E95E4324D18EC100EFA3F9 /* MatchCommentaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCommentaryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		22E95E0224D17F9000EFA3F9 = {
 			isa = PBXGroup;
 			children = (
+				22E95E3E24D18C6600EFA3F9 /* CommonFiles */,
 				22E95E0D24D17F9100EFA3F9 /* TickerCommentary */,
 				22E95E2424D17F9600EFA3F9 /* TickerCommentaryTests */,
 				22E95E2F24D17F9600EFA3F9 /* TickerCommentaryUITests */,
@@ -126,6 +131,31 @@
 				22E95E3224D17F9600EFA3F9 /* Info.plist */,
 			);
 			path = TickerCommentaryUITests;
+			sourceTree = "<group>";
+		};
+		22E95E3E24D18C6600EFA3F9 /* CommonFiles */ = {
+			isa = PBXGroup;
+			children = (
+				22E95E4024D18CB300EFA3F9 /* MatchPhotosCollectionViewCell */,
+				22E95E3F24D18C9C00EFA3F9 /* MatchCommentaryTableViewCell */,
+			);
+			path = CommonFiles;
+			sourceTree = "<group>";
+		};
+		22E95E3F24D18C9C00EFA3F9 /* MatchCommentaryTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				22E95E4124D18D2600EFA3F9 /* MatchCommentaryTableViewCell.xib */,
+				22E95E4324D18EC100EFA3F9 /* MatchCommentaryTableViewCell.swift */,
+			);
+			path = MatchCommentaryTableViewCell;
+			sourceTree = "<group>";
+		};
+		22E95E4024D18CB300EFA3F9 /* MatchPhotosCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MatchPhotosCollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22E95E4224D18D2600EFA3F9 /* MatchCommentaryTableViewCell.xib in Resources */,
 				22E95E1B24D17F9600EFA3F9 /* LaunchScreen.storyboard in Resources */,
 				22E95E1824D17F9600EFA3F9 /* Assets.xcassets in Resources */,
 				22E95E1624D17F9100EFA3F9 /* Main.storyboard in Resources */,
@@ -259,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22E95E4424D18EC100EFA3F9 /* MatchCommentaryTableViewCell.swift in Sources */,
 				22E95E1324D17F9100EFA3F9 /* ViewController.swift in Sources */,
 				22E95E0F24D17F9100EFA3F9 /* AppDelegate.swift in Sources */,
 				22E95E1124D17F9100EFA3F9 /* SceneDelegate.swift in Sources */,
