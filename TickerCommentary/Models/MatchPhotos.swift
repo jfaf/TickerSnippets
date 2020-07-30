@@ -10,6 +10,13 @@ import Foundation
 
 struct MatchPhotos: Codable {
     
-    var id: String
-    var photoUrl: String
+    let id: String
+    let photoUrl: String
+}
+
+extension MatchPhotos {
+    init?(data: Data) {
+        guard let me = try? JSONDecoder().decode(MatchPhotos.self, from: data) else { return nil }
+        self = me
+    }
 }

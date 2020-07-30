@@ -10,8 +10,19 @@ import Foundation
 
 struct MatchCommentary: Codable {
     
-    var id: String
-    var heading: String
-    var subheading: String
+    let id: String
+    let heading: String
+    let subheading: String
     
+    enum CodingKeys: String, CodingKey {
+          case id, heading, subheading
+      }
+    
+}
+
+extension MatchCommentary {
+    init?(data: Data) {
+        guard let me = try? JSONDecoder().decode(MatchCommentary.self, from: data) else { return nil }
+        self = me
+    }
 }
