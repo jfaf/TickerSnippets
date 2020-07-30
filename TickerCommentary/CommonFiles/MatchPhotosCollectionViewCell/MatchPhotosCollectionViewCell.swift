@@ -15,6 +15,10 @@ class MatchPhotosCollectionViewCell :UICollectionViewCell{
     @IBOutlet weak var MatchPhoto: UIImageView!
     
     
-    
+    public var matchPhoto: MatchPhotos! {
+          didSet {
+            self.MatchPhoto.loadImage(fromURL: matchPhoto.photoUrl)
+          }
+      }
     
 }

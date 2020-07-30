@@ -15,4 +15,15 @@ class MatchCommentaryTableViewCell: UITableViewCell {
     @IBOutlet weak var MatchCommentaryHeading: UILabel!
     @IBOutlet weak var MatchCommentarySubHeading: UILabel!
     
+    public var commentaryCell : MatchCommentary! {
+        
+        didSet{
+            
+            self.MatchCommentaryHeading.text = commentaryCell.heading
+            self.MatchCommentarySubHeading.text = commentaryCell.subheading
+            
+        }
+        
+    }
+    
 }
