@@ -3,5 +3,12 @@
     [
         {"id": "1" ,"heading" : "test", "subheading": "test"},
         {"id": "2" ,"heading" : "test", "subheading": "test"}
+    ],
+    
+    "Photos" :
+    [
+        {"id": "1", "photoUrl": "https://firebasestorage.googleapis.com/v0/b/ticker-38d84.appspot.com/o/VSYJ5HW59TXoeeIA0dOOOXb5BHt1%20profilePic%20Fri%20May%2029%2017%3A04%3A09%20GMT%2B02%3A00%202020?alt=media&token=c47918c8-7545-4270-a110-fed5069e292e"}
+    
+    
     ]
 }
