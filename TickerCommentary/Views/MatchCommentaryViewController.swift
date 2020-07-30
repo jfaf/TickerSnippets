@@ -14,11 +14,25 @@ import RxCocoa
 
 class MatchCommentaryViewController: UIViewController {
     
-    @IBOutlet weak var MatchCommentaryTableView: UITableView!
+    @IBOutlet private weak var MatchCommentaryTableView: UITableView!
     
-    public var commentary = PublishSubject<[MatchCommentary]>()
+    public var commentarys = PublishSubject<[MatchCommentary]>()
     private let disposeBag = DisposeBag()
     
+    override func viewDidLoad() {
+          super.viewDidLoad()
+          setupBinding()
+      }
     
+    private func setupBinding(){
+        
+        MatchCommentaryTableView.register(UINib(nibName: "MatchCommentaryTableViewCell", bundle: nil), forCellReuseIdentifier: String(describing: MatchCommentaryTableViewCell.self))
+        
+        commentarys.bind(to: MatchCommentaryTableView.rx.items(cellIdentifier: "MatchCommentaryTableViewCell", cellType: MatchCommentaryTableViewCell.self)) {  (row,commentary,cell) in
+            cell.commentaryCell = commentary
+            }.disposed(by: disposeBag)
+        
+    }
+        
     
 }

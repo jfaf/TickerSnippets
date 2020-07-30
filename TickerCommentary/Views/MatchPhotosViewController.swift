@@ -19,5 +19,23 @@ class MatchPhotosViewController : UIViewController {
     private let disposeBag = DisposeBag()
     
     
+    override func viewDidLoad() {
+           super.viewDidLoad()
+           setupBinding()
+       }
+    
+    private func setupBinding(){
+        
+        
+        MatchPhotosCollectionView.register(UINib(nibName: "MatchPhotosCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: String(describing: MatchPhotosCollectionViewCell.self))
+        
+        
+        matchPhotos.bind(to: MatchPhotosCollectionView.rx.items(cellIdentifier: "MatchPhotosCollectionViewCell", cellType: MatchPhotosCollectionViewCell.self)) {  (row,MatchPhoto,cell) in
+            cell.matchPhoto = MatchPhoto
+            }.disposed(by: disposeBag)
+        
+        
+    }
+    
     
 }
