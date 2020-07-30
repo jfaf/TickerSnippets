@@ -57,7 +57,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZBp-tT-TSy">
-                                <rect key="frame" x="0.0" y="161" width="414" height="158"/>
+                                <rect key="frame" x="20" y="161" width="374" height="158"/>
                                 <connections>
                                     <segue destination="4Z2-3f-o7o" kind="embed" id="7CQ-km-2oj"/>
                                 </connections>
@@ -71,20 +71,20 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="V8v-K8-47o" firstAttribute="top" secondItem="1tY-ID-nNp" secondAttribute="bottom" constant="32.5" id="F4i-wT-cmg"/>
-                            <constraint firstItem="tMn-dr-s5y" firstAttribute="top" secondItem="ZBp-tT-TSy" secondAttribute="bottom" constant="8" id="K0J-yf-aer"/>
-                            <constraint firstItem="1tY-ID-nNp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="NaI-NB-lzS"/>
-                            <constraint firstItem="tMn-dr-s5y" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="327" id="QFm-OH-cje"/>
-                            <constraint firstItem="Gtw-hj-GOu" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="RWI-Od-2KI"/>
-                            <constraint firstItem="tMn-dr-s5y" firstAttribute="leading" secondItem="Gtw-hj-GOu" secondAttribute="leading" id="SYu-y2-tvY"/>
-                            <constraint firstItem="Gtw-hj-GOu" firstAttribute="top" secondItem="tMn-dr-s5y" secondAttribute="bottom" constant="17.5" id="Uff-tP-uj9"/>
-                            <constraint firstItem="ZBp-tT-TSy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Yxs-GR-71H"/>
-                            <constraint firstItem="1tY-ID-nNp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aBD-GF-JWQ"/>
-                            <constraint firstItem="ZBp-tT-TSy" firstAttribute="centerX" secondItem="Gtw-hj-GOu" secondAttribute="centerX" id="jR7-iE-H6z"/>
-                            <constraint firstItem="V8v-K8-47o" firstAttribute="leading" secondItem="tMn-dr-s5y" secondAttribute="leading" id="lNx-zE-5E5"/>
-                            <constraint firstItem="Gtw-hj-GOu" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="s22-qf-cZ8"/>
-                            <constraint firstItem="1tY-ID-nNp" firstAttribute="leading" secondItem="V8v-K8-47o" secondAttribute="leading" id="tVY-FQ-5NA"/>
-                            <constraint firstItem="ZBp-tT-TSy" firstAttribute="top" secondItem="V8v-K8-47o" secondAttribute="bottom" constant="16.5" id="uxW-FC-du6"/>
+                            <constraint firstItem="ZBp-tT-TSy" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="0cT-TF-qBZ"/>
+                            <constraint firstItem="V8v-K8-47o" firstAttribute="top" secondItem="1tY-ID-nNp" secondAttribute="bottom" constant="32.5" id="1X9-A1-lMV"/>
+                            <constraint firstItem="Gtw-hj-GOu" firstAttribute="top" secondItem="tMn-dr-s5y" secondAttribute="bottom" constant="17.5" id="1i6-DB-0Xm"/>
+                            <constraint firstItem="1tY-ID-nNp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4gY-Uj-0mZ"/>
+                            <constraint firstItem="V8v-K8-47o" firstAttribute="leading" secondItem="ZBp-tT-TSy" secondAttribute="leading" id="5NZ-bg-lte"/>
+                            <constraint firstItem="ZBp-tT-TSy" firstAttribute="leading" secondItem="tMn-dr-s5y" secondAttribute="leading" id="B4d-3w-S94"/>
+                            <constraint firstItem="1tY-ID-nNp" firstAttribute="leading" secondItem="V8v-K8-47o" secondAttribute="leading" id="FVV-tV-gyh"/>
+                            <constraint firstItem="ZBp-tT-TSy" firstAttribute="top" secondItem="V8v-K8-47o" secondAttribute="bottom" constant="16.5" id="FmQ-3A-dTt"/>
+                            <constraint firstItem="tMn-dr-s5y" firstAttribute="top" secondItem="ZBp-tT-TSy" secondAttribute="bottom" constant="8" id="IpQ-Ri-3aY"/>
+                            <constraint firstItem="tMn-dr-s5y" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="327" id="MfN-wq-X72"/>
+                            <constraint firstItem="Gtw-hj-GOu" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="RYX-nc-5qx"/>
+                            <constraint firstItem="1tY-ID-nNp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="mkB-QC-gh5"/>
+                            <constraint firstItem="ZBp-tT-TSy" firstAttribute="trailing" secondItem="Gtw-hj-GOu" secondAttribute="trailing" id="owO-wY-4Dk"/>
+                            <constraint firstItem="tMn-dr-s5y" firstAttribute="leading" secondItem="Gtw-hj-GOu" secondAttribute="leading" id="p5M-LQ-RWL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -102,15 +102,14 @@
             <objects>
                 <viewController storyboardIdentifier="MatchPhotosVC" id="4Z2-3f-o7o" userLabel="MatchPhotosVC" customClass="MatchPhotosViewController" customModule="TickerCommentary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="doh-C0-FlO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="158"/>
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="158"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZeR-JI-vEJ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="158"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZeR-JI-vEJ">
+                                <rect key="frame" x="0.0" y="0.0" width="374" height="158"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="H9P-b0-LgU">
-                                    <size key="itemSize" width="200" height="100"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="H9P-b0-LgU">
+                                    <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -119,6 +118,12 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZeR-JI-vEJ" firstAttribute="leading" secondItem="doh-C0-FlO" secondAttribute="leadingMargin" constant="-16" id="Nr0-mM-qvB"/>
+                            <constraint firstItem="ZeR-JI-vEJ" firstAttribute="bottom" secondItem="doh-C0-FlO" secondAttribute="bottomMargin" id="b6O-Zl-3vS"/>
+                            <constraint firstItem="ZeR-JI-vEJ" firstAttribute="centerY" secondItem="doh-C0-FlO" secondAttribute="centerY" id="dTh-kj-nB6"/>
+                            <constraint firstItem="ZeR-JI-vEJ" firstAttribute="centerX" secondItem="doh-C0-FlO" secondAttribute="centerX" id="l4g-cG-YuB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="HHG-0a-0k7"/>
                     </view>
                     <connections>
@@ -137,7 +142,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="374" height="497"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iZH-Lo-oWp">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iZH-Lo-oWp">
                                 <rect key="frame" x="0.0" y="0.0" width="374" height="497"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
