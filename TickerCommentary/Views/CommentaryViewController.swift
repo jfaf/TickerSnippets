@@ -15,9 +15,10 @@ class CommentaryViewController: UIViewController {
     @IBOutlet weak var MatchPhotosVCView: UIView!
     @IBOutlet weak var MatchCommentaryVCView: UIView!
     
+    
     private lazy var matchPhotosViewController: MatchPhotosViewController = {
         // Load Storyboard
-        let storyboard = UIStoryboard(name: "Home", bundle: Bundle.main)
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         
         // Instantiate View Controller
         var viewController = storyboard.instantiateViewController(withIdentifier: "MatchPhotosVC") as! MatchPhotosViewController
@@ -30,7 +31,7 @@ class CommentaryViewController: UIViewController {
     
     private lazy var matchCommentaryViewController: MatchCommentaryViewController = {
         // Load Storyboard
-        let storyboard = UIStoryboard(name: "Home", bundle: Bundle.main)
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         
         // Instantiate View Controller
         var viewController = storyboard.instantiateViewController(withIdentifier: "MatchCommentaryVC") as! MatchCommentaryViewController
@@ -41,9 +42,30 @@ class CommentaryViewController: UIViewController {
         return viewController
     }()
     
+    var commentaryViewModel = CommentaryViewModel()
+    let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        setupBindings()
+        commentaryViewModel.requestMatchData()
+    }
+    
+    private func setupBindings(){
+    
+    commentaryViewModel
+        .matchCommentary
+        .observeOn(MainScheduler.instance)
+        .bind(to: matchCommentaryViewController.commentarys)
+        .disposed(by: disposeBag)
+        
+    commentaryViewModel
+        .matchPhotos
+        .observeOn(MainScheduler.instance)
+        .bind(to: matchPhotosViewController.matchPhotos)
+        .disposed(by: disposeBag)
+        
     }
 
 
