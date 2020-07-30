@@ -34,7 +34,6 @@ class MatchPhotosViewController : UIViewController {
             cell.matchPhoto = MatchPhoto
             }.disposed(by: disposeBag)
         
-        
     }
     
     
