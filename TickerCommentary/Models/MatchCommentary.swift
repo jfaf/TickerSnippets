@@ -14,10 +14,6 @@ struct MatchCommentary: Codable {
     let heading: String
     let subheading: String
     
-    enum CodingKeys: String, CodingKey {
-          case id, heading, subheading
-      }
-    
 }
 
 extension MatchCommentary {
