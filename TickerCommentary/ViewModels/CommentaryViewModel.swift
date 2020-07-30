@@ -39,7 +39,12 @@ class CommentaryViewModel {
             
             print("Commentary log" , matchCommentary)
             
+            let matchPhotos = responseJson["Photos"].arrayValue.compactMap {return MatchPhotos(data: try! $0.rawData())}
+            
+            print("Photos log" , matchPhotos)
+            
             self.matchCommentary.onNext(matchCommentary)
+            self.matchPhotos.onNext(matchPhotos)
             
          } catch {
              print("decode error")
